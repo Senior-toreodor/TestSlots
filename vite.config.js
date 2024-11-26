@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Ensure correct relative paths
+  base: './',
   build: {
-    outDir: 'dist', // Output directory for Vercel
+    outDir: 'dist',
     emptyOutDir: true,
   },
 });
