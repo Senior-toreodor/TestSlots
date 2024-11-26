@@ -1,12 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: '.',  
-  publicDir: 'public',  
+  base: './', // Ensure correct relative paths
   build: {
-    outDir: 'dist', 
-  },
-  server: {
-    port: 3000,  
+    outDir: 'dist', // Output directory for Vercel
+    emptyOutDir: true,
   },
 });
